@@ -3,17 +3,20 @@
     <head>
         <title>Ubicación de Ba Sing Se</title>
         <link href="style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Merienda" rel="stylesheet">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
     </head>
     <body>
-        <div id="menu">
+        <nav>
             <a href="index.html" class="menu-item">Inicio</a>
             <a href="ubicacion.html" class="menu-item">Ubicación</a>
             <a href="personas.html" class="menu-item">Personajes relevantes</a>
             <a href="costumbres.html" class="menu-item">Costumbres</a>
-            <a href="historia.html" class="menu-item"><label >Historia</a>
-        </div>
-        <div id="content">
+            <a href="historia.html" class="menu-item">Historia</a>
+            <a href="mapa_interactivo.html" class="menu-item">Mapa interactivo</a>    
+        </nav>
+        <div class="content">
+            <a name="arriba"></a><!--Referencia al inicio de la página -->
+            <h4><a href="#abajo">Ir a la parte de abajo</a></h4><!--Link a la parte de abajo-->
             <h1>Ubicación de Ba Sing Se</h1>
             <p>
                 Ba Sing Se es la capital del reino de la tierra. 
@@ -23,7 +26,7 @@
                 y la interior, se encuentran inmensos campos silvestres y de cultivo. La ciudad propiamente dicha, se encuentra
                 dentro de los muros interiores, donde a su vez es sectorizada y su población dividida en 3 zonas.
             </p>
-            <img src="../media/Mapa.jpg" alt="La ciudad de Ba Sing Se">
+            <img id ="mapa" src="../media/Mapa.jpg" alt="La ciudad de Ba Sing Se">
             <div>
                 <div class="item-box">
                     <h2>Sector intermuros</h2>
@@ -72,8 +75,11 @@
                     <img src="../media/Palacio_Real_del_Reino_Tierra.png" alt="Palacio real de Ba Sing Se" class="item-content">
                 </div>
             </div>
+            <h4><a href="#arriba">Ir a la parte de arriba</a></h4><!--Link a la parte de arriba-->
+            <a name="abajo"></a> <!--Referencia a la parte de abajo--> 
             <h4><a href="mapa.html">Mapa del sitio y referencias</a></h4>
             <h4>Andres García 2019-2019</h4>
         </div>
+
     </body>
 </html>

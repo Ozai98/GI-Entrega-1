@@ -3,61 +3,72 @@
     <head>
         <title>Personajes de Ba Sing Se</title>
         <link href="style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Merienda" rel="stylesheet">
-
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
     </head>
     <body>
-        <div id="menu">
+        <nav><!-- Barra de navegación del sitio-->
             <a href="index.html" class="menu-item">Inicio</a>
             <a href="ubicacion.html" class="menu-item">Ubicación</a>
             <a href="personas.html" class="menu-item">Personajes relevantes</a>
             <a href="costumbres.html" class="menu-item">Costumbres</a>
-            <a href="historia.html" class="menu-item"><label >Historia</a>
-        </div>        
-        <div id="content">
+            <a href="historia.html" class="menu-item">Historia</a>
+            <a href="mapa_interactivo.html" class="menu-item">Mapa interactivo</a>     
+        </nav>       
+        <div class="content"><!--Contenedor que encierra el contenido de la página para facilitar el estilado-->
+            <a name="arriba"></a><!--Referencia al inicio de la página -->
+            <h4><a href="#abajo">Ir a la parte de abajo</a></h4><!--Link a la parte de abajo-->
             <h1>Habitantes y personajes relevantes</h1><br>
             <p>
                 La capital del reino tierra, aloja a gran cantidad de refugiados víctimas de la guerra con la nación del fuego. Casi todas ellas, son ciudadanas del mismo reino tierra
                 y por lo tanto pertencen a su etnia. Hay también algunos habitantes de las tribus agua. 
                 
             </p>
-            <img src="../media/Toph_y_Katara.png" alt="Vestimentas del reino tierra"><br><br>
+            <img class="img" src="../media/Toph_y_Katara.png" alt="Vestimentas del reino tierra"><br><br>
             <p>A continuación mostraremos algunas personalidades importantes que habitan la ciudad.</p><br>
-            <h2>Long Feng</h2>
+            
+            <div class="item-box"><!--Contenedor que encierra uno de las secciones del documento-->
+                <h2>Long Feng</h2>
                 <p>
                     Era el gran secretario de la ciudad de Ba Sing Se, a pesar de que su cargo nominalmente solo pretendía conservar la herencia cultural, 
                     Long Feng era el verdadero jefe de estado de la ciudad y hasta cierto punto del reino tierra. El ejercía su control mediante el uso de 
                     la policía cultural mejor conocida como los Dai Li.
                 </p>
-                <img src="../media/Long_Feng.png" alt="Long Feng">
-            <h2>Los Dai Li</h2>
+                <img class="img" src="../media/Long_Feng.png" alt="Long Feng">
+            </div>
+            <div class="item-box"><!--Contenedor que encierra uno de las secciones del documento-->
+                <h2>Los Dai Li</h2>
                 <p>
                     Formalmente, la policía cultural de la ciudad, que inicialmente pretendía proteger el patrimonio y sus costumbres, son una orden fundada por 
-                    el avatar Kyoshi. Con el tiempo el dai li fue corrupto y convertido en una policía secreta que estaba al servicio de Long Feng. Uno de los requisitos para 
-                    permanecer en la ciudad como refugiado consistía en negar la existencia de una guerra fuera de los muros, cuando las personas no obedecían estas órdenes, 
-                    el dai li los llevaba al lago Laogai. Allí mantenían prisioneros políticos, secretos que escandalizarían a la población y un lugar donde se realizaban lavados 
-                    de cerebro. Cuando un guerrero Dai li pronunciaba la palabra clave "El rey de la tierra te invita al lago Laogai"  
-                    las víctimas procedían a realizar acciones para las que fueron programadas.
+                    el avatar Kyoshi. Con el tiempo el dai li fue corrupto y convertido en una policía secreta que estaba al servicio de Long Feng.
                 </p>
-                <img src="../media/Agentes_Dai_Li.png" alt="Agentes Dai Li">
-            <h2>Rey del reino Tierra</h2>
+                <img class="img" src="../media/Agentes_Dai_Li.png" alt="Agentes Dai Li">
+            </div>    
+            <div class="item-box"><!--Contenedor que encierra uno de las secciones del documento-->
+                <h2>Rey del reino Tierra</h2>
                 <p>
                     El rey del reino tierra actual es Kuei, aunque oficialmente es el jefe de estado del reino, durante mucho tiempo fue manipulado por Long Feng y los Dai Li a tal punto que ignoraba 
                     la existencia de una guerra con la nación del fuego. Long Feng era quien realmente ejercía el poder en la ciudad.
                 </p>
-                <img src="../media/Earth-King.png" alt="Rey del reino tierra">
-            <h2>Joo Dee</h2>
+                <img class="img" src="../media/Earth-King.png" alt="Rey del reino tierra">
+            </div>
+            <div class="item-box"><!--Contenedor que encierra uno de las secciones del documento-->
+                <h2>Joo Dee</h2>
                 <p>
                     Joo Dee era una guía que se le asignaba a los recién llegados a la ciudad, ella era sometida a los Dai Li y adoctrinaba a los visitantes a que dejaran de mencionar la guerra dentro 
                     de los muros. Después se descubre que Joo Dee es solo un personaje y que muchas mujeres son entrenadas con este nombre y misión.
                 </p>
-                <img src="../media/Joo Dee.webp" alt="Joo Dee">
-            <h2>Guardias de la muralla</h2>
+                <img class="img" src="../media/Joo Dee.webp" alt="Joo Dee">
+            </div> 
+            <div class="item-box"><!--Contenedor que encierra uno de las secciones del documento-->
+                <h2>Guardias de la muralla</h2>
                 <p>
                     Los guardias de la muralla son soldados del reino tierra que se encargan de proteger las murallas de la ciudad.
                 </p>
-                <img src="../media/Equipo_Terra.png" alt="Equipo_Terra">
-                <h4><a href="mapa.html">Mapa del sitio y referencias</a></h4>
+                <img class="img" src="../media/Equipo_Terra.png" alt="Equipo_Terra">
+            </div>
+            <h4><a href="#arriba">Ir a la parte de arriba</a></h4><!--Link a la parte de arriba-->
+            <a name="abajo"></a> <!--Referencia a la parte de abajo-->          
+            <h4><a href="mapa.html">Mapa del sitio y referencias</a></h4>
             <h4>Andres García 2019-2019</h4>
         </div>
     </body>

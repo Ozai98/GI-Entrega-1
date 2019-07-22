@@ -1,92 +1,203 @@
-* {
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps');  /*Importación de las fuentes provenientes de fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+@font-face {    /*Importación de la fuente local Herculanum*/
+    font-family: "Herculanum";      
+    src: url('../fonts/Herculanum.ttf');
+}
+* {                 /*Reseteo del margen y padding de toda la hija de estilos*/
     margin: 0;
     padding: 0;   
 }
+html, body{
+    height: 100%;
+}
 body {
-    background-color: #E6D5B3;
+    background-color: #E6D5B3; /*Definición del color de fondo, la alineación, el color de fuente, y la tipografía principal del body*/
     text-align: center;
     color: #392913;
-    font-family: 'Merienda', 'cursive';
+    font-family: 'Lora', 'serif';
 }
-h1 {
+h1 {                    /*Definición del color, tamaño de fuente y padding del h1*/
     color: #5D9011;
     font-size: 60px;
     padding: 10px 10px;
 }
-h2{
-    padding: 5px 5px;
-}
-h4{
+h4{                     /*Definición del color y tamaño del h4*/
     color: #392913;
     font-size: 16px;
 }
-a{
+a{                              /*Los links no tienen decorado y su color cambia*/
     text-decoration: none;
     color: #5D9011;
     padding: 5px 10px;
 }
-a:hover{
+a:hover{                    /*Cuando se pasa el mouse sobre el link este cambia de color*/
     color: #FFDE36; 
     text-decoration: none;  
 }
-li {
+li {                            /*Definido el estilo de los items de una lista*/
     list-style-type: none;
     text-align: justify;
     padding: 3px 0px;
 }
-label{ 
-    max-height: 60px; 
-    cursor: pointer; 
-}
-h1, h2 {
-    font-family: 'Macondo Swash Caps','cursive';
+
+h1, h2 {                    /*Los h1 y h2 ahora tienen como tipografía Herculanum*/
+    font-family: 'Herculanum';
+    font-weight: bolder;
 }
 
 p {
     font-size: 20px;
     text-align: justify;
-    padding: 10px 10px;
+    padding: 20px 10px;
 }
 
-.menu-item {
-    color: #FFDE36;
-    padding: 5px 10px;
-    font-size: 30px;
-    font-family: 'Merienda', 'cursive';
-    font-weight: bold;
-}
-.menu-item:hover{
-    color: #E0C6A2; 
-}
-.item-content{
-    float: left; 
-    width: 49%;
-}
-.item-box{
-    margin: 15px 15px;
-    justify-content: space-around;
-}
-
-#menu {    
-    display: flex;
-    justify-content: space-around;
+nav {                           /*Cambio de color de la barra de navegación*/
     background-color: #392913;
     padding: 10px 10px;
 }
-#banner {
-    width: 100%; height: 100px;
-    overflow: scroll;    
+.img{                                /*Añadido un borde a las imágenesy un tamaño máximo y mínimo*/
+    border: 4px solid #5D9011;
+    max-width: 400px;
+    max-height: 400px;
+    min-height: 100px;
+    min-width: 100px;
 }
-#content {
+
+.menu-item {                /*Los elementos del menú van en negrilla con Herculanum*/
+    color: #FFDE36;
+    padding: 10px 10px;
+    font-size: 30px;
+    font-family: 'Herculanum';
+    font-weight: bold;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.menu-item:hover{           /*Cuando se pasa el link sobre un itemdel menú su color de fuente y fondo cambian*/
+    color: #E0C6A2;
+    background-color: #5D9011; 
+}
+
+.item-box{                  /*Los contenedores de las secciones tienen dos columnas*/
+    margin: 15px 15px;
+    padding: 30px 30px;
+    column-count: 2;
+}
+
+.content {                      /*Cambio del color de fondo del contenedor de todo el contenido*/
+    padding: 20px 20px;
+    margin:  0px 10%;
+    background-color: #E0C6A2;
+    height: 100%;
+}
+#content-history{               /*Estilado del contenido de la página historia*/
+    column-count: 2;
     padding: 20px 20px;
     margin:  0px 10%;
     background-color: #E0C6A2;
 }
-img{
-    size: 400px 400px;
+#mapa {
+    max-width: 1000px;
+    max-height: 1000px;                     /*Tamaño de la imagen del mapa del mundo*/ 
+    width: 660px;
+    height: 468px;
 }
 
+#startButton{
+    width: 350px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Herculanum';
+    background-color: #FFDE36;
+    border-radius: 18px;
+    color: #392913;
+}
+#exitButton{
+    width: 100px;
+    height: 100px;
+    background-color: #392913;
+    border: none;
+    border-radius: 80px;
+    display: none;
+    position:absolute;
+    bottom:0;
+    right:10%;
+}
+#btm{
+    background-color: #E0C6A2; 
+    margin: 0 10%; 
+    padding: 5px 0;
+}
+#intCont{
+    background-color: #392913;
+    padding: 0;
+}
+#backIcon{
+    height: 50px;
+    width: 50px;
+}
 
+@media only screen and (max-width: 480px) { /*Restricciones para pantallas menores a 480 pixeles en ancho*/
+    .menu-item {
+        font-size: 14px;
+        padding: 0px 0px;
+    }
+    #content ,p{
+        font-size: 12px;
+        line-height: 1.6;
+        max-width:350px;
+        margin: 0 10%;
+    }	
+    h1 {
+        font-size: 26px;
+    }
+    img, #mapa{
+        margin-left: 2px;
+        margin-bottom: 2px;
+        width: 150px;
+        height: 113px;
+    }
+    .item-box{
+        column-count: 1;
+    }
+}
 
+@media only screen and (max-width: 780px) { /*Restricciones para pantallas menores a 780 pixeles en ancho*/
+    body{
+        background-color: #E0C6A2
+    }
+    .menu-item {
+        font-size: 12px;
+    }
+    .menu-item:hover{
+        background-color: #392913;
+    }
+    #content ,p{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    img, #mapa{
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 150px;
+    }
+}
 
 

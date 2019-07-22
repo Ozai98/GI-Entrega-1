@@ -1,1 +1,1 @@
-GI Entrega 1
+Primera entrega gráfica interactiva por Andres Garcia
