@@ -13,6 +13,7 @@
 html, body{
     height: 100%;
 }
+
 body {
     background-color: #E6D5B3; /*Definición del color de fondo, la alineación, el color de fuente, y la tipografía principal del body*/
     text-align: center;
@@ -73,7 +74,7 @@ nav {                           /*Cambio de color de la barra de navegación*/
     font-family: 'Herculanum';
     font-weight: bold;
 }
-.center{
+.center{ /*Centra el elemento*/
     margin: 0;
     position: absolute;
     top: 50%;
@@ -82,7 +83,7 @@ nav {                           /*Cambio de color de la barra de navegación*/
     transform: translate(-50%, -50%);
 }
 
-.menu-item:hover{           /*Cuando se pasa el link sobre un itemdel menú su color de fuente y fondo cambian*/
+.menu-item:hover{           /*Cuando se pasa el link sobre un item del menú su color de fuente y fondo cambian*/
     color: #E0C6A2;
     background-color: #5D9011; 
 }
@@ -98,6 +99,26 @@ nav {                           /*Cambio de color de la barra de navegación*/
     margin:  0px 10%;
     background-color: #E0C6A2;
     height: 100%;
+}
+.half{
+    width: 48%;
+    height: fit-content;
+    text-align: center;
+    float: left;
+    margin: 1% 1%;
+}
+.number{
+    display: inline-block;
+    background-color: #E0C6A2;
+    color: #392913;
+    border: 2px #392913;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'Herculanum'
+
 }
 #content-history{               /*Estilado del contenido de la página historia*/
     column-count: 2;
@@ -121,31 +142,88 @@ nav {                           /*Cambio de color de la barra de navegación*/
     background-color: #FFDE36;
     border-radius: 18px;
     color: #392913;
+    cursor: pointer;
 }
 #exitButton{
     width: 100px;
     height: 100px;
     background-color: #392913;
     border: none;
-    border-radius: 80px;
     display: none;
     position:absolute;
     bottom:0;
     right:10%;
+    cursor: pointer;
 }
 #btm{
     background-color: #E0C6A2; 
     margin: 0 10%; 
     padding: 5px 0;
+    position: absolute;
+    bottom: 0;
 }
 #intCont{
     background-color: #392913;
-    padding: 0;
+    height: 100%;
 }
 #backIcon{
     height: 50px;
     width: 50px;
 }
+#interface{
+    padding: 100px 100px 25px 100px;
+    display: none;
+    height: 640px;
+    width: 1280px;
+    text-align: center;
+}
+#controlsContainer{
+    height: 604px;
+}
+#currIMG{
+    height: 60.5%;
+    width: 100%;
+    border: 5px #FFDE36 solid;
+}
+#dispIMG{
+    height: 365px;
+    max-width: 614px;
+}
+#currTXT{
+    height: 36.5%;
+    width: 100%;
+    color: #392913;
+    border: 5px #FFDE36 solid;
+    border-top: none;
+    background-color: #E0C6A2;
+    font-family: 'Herculanum';  
+}
+#descTXT{
+    text-align: center;
+    font-size: 28px;
+}
+
+#buttons{
+    padding: 10px 0;
+    display: none;
+}
+#moreInfo{
+    visibility: hidden;
+    font-size: 24px;
+}
+
+#intMap{
+    z-index: 99;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#intTitle{
+    padding: 80px 0 0 0;
+}
+
+
 
 @media only screen and (max-width: 480px) { /*Restricciones para pantallas menores a 480 pixeles en ancho*/
     .menu-item {

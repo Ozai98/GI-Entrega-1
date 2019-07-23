@@ -4,7 +4,7 @@
         <title>Mapa interactivo</title>
         <link href="style.css" type="text/css" rel="stylesheet">
         <script src="interactive_map.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     </head>
     <body>
         <nav id="nav"><!-- Barra de navegación del sitio-->
@@ -13,16 +13,46 @@
             <a href="personas.html" class="menu-item">Personajes relevantes</a>
             <a href="costumbres.html" class="menu-item">Costumbres</a>
             <a href="historia.html" class="menu-item">Historia</a>
-            <a href="mapa_interactivo.html" class="menu-item">Mapa interactivo</a>    
+            <a href="mapa_interactivo.html" class="menu-item">Mapa interactivo</a>
         </nav>
         <div class="content" id="intCont"><!--Contenedor que encierra el contenido de la página para facilitar el estilado-->
-            <button class="center" id="startButton" onclick="start()">Iniciar</button>                       
-            <button id="exitButton" onclick="close()"><img id ="backIcon" src="../media/reply.png"></button>
+            <button class="center" id="startButton" onclick="start()">Iniciar</button> <!-- Botón inicial  -->
+            <button id="exitButton" onclick="goBack()"><img id ="backIcon" src="../media/reply.png"></button> <!-- Botón de reinicio-->
+            <h1 id="intTitle">MAPA INTERACTIVO DE BA SING SE</h1> <!-- Título del sitio -->
+            <div id="interface"> Contenedor del mapa interactivo
+                <div class="half" id =visualizer> <!-- Contenedor de la imagen del mapa -->
+                    <img id="intMap" src="../media/mapaBaSingSe.png">
+                </div>
+                <div class="half" id=controlsContainer> <!-- Contenedor de los contenidos asociados a los botones-->
+                    <div id="currIMG">
+                        <img id="dispIMG" src="../media/default.png">
+                    </div>
+                    <div id="currTXT">
+                        <p id="descTXT">
+                            ¡Selecciona uno de los lugares de Ba Sing Se en los botones de abajo para conocer más!
+                        </p>
+                        <h4>
+                            <a target="_blank" id="moreInfo" href="">¡Haz clic aquí para más información!</a>
+                        </h4>
+                    </div>
+                </div>
+                
+            </div>
+           <div id="buttons"> <!--Contenedor de todos los botones usados -->
+                    <button class="number" id="n1" onclick="click1()">1</button>
+                    <button class="number" id="n2" onclick="click2()">2</button>
+                    <button class="number" id="n3" onclick="click3()">3</button>
+                    <button class="number" id="n4" onclick="click4()">4</button>
+                    <button class="number" id="n5" onclick="click5()">5</button>
+                    <button class="number" id="n6" onclick="click6()">6</button>
+                    <button class="number" id="n7" onclick="click7()">7</button>
+                    <button class="number" id="n8" onclick="click8()">8</button>
+                    <button class="number" id="n9" onclick="click9()">9</button>
+                    <button class="number" id="n10" onclick="click10()">10</button>
+                    <button class="number" id="n11" onclick="click11()">11</button>
+                    <button class="number" id="n12" onclick="click12()">12</button>
+                    <button class="number" id="n13" onclick="click13()">13</button>
+            </div>
         </div>
-        <div id="btm">
-            <h4><a href="mapa.html">Mapa del sitio y referencias</a></h4>
-            <h4>Andres García 2019-2019</h4>
-        </div>
-            
     </body>
 </html>
